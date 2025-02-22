@@ -20,7 +20,7 @@ const Login = () => {
         }
 
         console.log(obj)
-        let res = await axios.post('http://localhost:8080/users/login',obj);
+        let res = await axios.post('https://socalapp-backend.onrender.com/users/login',obj);
         console.log(res.data)
         if(res.data.success){
             // alert(res.data.msg)

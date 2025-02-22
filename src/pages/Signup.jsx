@@ -19,7 +19,7 @@ const Signup = () => {
         }
 
         console.log(obj)
-        let res = await axios.post('http://localhost:8080/users/create',obj);
+        let res = await axios.post('https://socalapp-backend.onrender.com/users/create',obj);
         console.log(res.data)
         if(res.data.success){
             // alert(res.data.msg)

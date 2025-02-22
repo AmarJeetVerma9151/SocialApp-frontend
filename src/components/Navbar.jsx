@@ -17,7 +17,7 @@ const Navbar = () => {
   const handleSearchChanger = async (e) => {
     // console.log(e.target.value)
     let value = e.target.value
-    let res = await axios.get(`http://localhost:8080/users/search?q=${value}`);
+    let res = await axios.get(`https://socalapp-backend.onrender.com/users/search?q=${value}`);
     let data = res.data;
     // console.log(data.users)
     setsearchUsers(data.users)

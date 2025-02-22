@@ -23,7 +23,7 @@ const Home = () => {
   console.log(AllPosts)
 
   const getAllUserPost = async () => {
-    let res = await axios.get('http://localhost:8080/posts/getAllpost');
+    let res = await axios.get('https://socalapp-backend.onrender.com/posts/getAllpost');
     let data = res.data;
     // console.log(data)
     setAllPosts(res.data.post)
@@ -37,7 +37,7 @@ const Home = () => {
   const handleLikes = async(postId)=>{
     console.log("running")
     console.log(postId)
-    let res = await axios.get(`http://localhost:8080/posts/like/${postId}`,{
+    let res = await axios.get(`https://socalapp-backend.onrender.com/posts/like/${postId}`,{
       headers:{
         'Authorization':userStore.token
       }
@@ -82,7 +82,7 @@ const Home = () => {
   const handleCommentSubmit = async(postId)=>{
     // console.log(postId)
     //   console.log(commentValue)
-      let res = await  axios.post(`http://localhost:8080/posts/comment/${postId}`,{text:commentValue},{
+      let res = await  axios.post(`https://socalapp-backend.onrender.com/posts/comment/${postId}`,{text:commentValue},{
         headers:{
           'Authorization':userStore.token
         }

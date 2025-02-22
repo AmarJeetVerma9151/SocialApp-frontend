@@ -25,7 +25,7 @@ function App() {
   // console.log(login)
 
   const getUserDetails = async()=>{
-    let res = await axios.get('http://localhost:8080/users/getUser',{
+    let res = await axios.get('https://socalapp-backend.onrender.com/users/getUser',{
       headers:{
         'Authorization':userStore.token
       }

@@ -18,7 +18,7 @@ const FriendProfile = (props) => {
 
   const [userDetails, setuserDetails] = useState('');
     async function getUserDetails (){
-        let res = await axios.get(`http://localhost:8080/users/getSingleUser/${userId}`);
+        let res = await axios.get(`https://socalapp-backend.onrender.com/users/getSingleUser/${userId}`);
         let data = res.data;
         console.log(data)
         setuserDetails(data.user)

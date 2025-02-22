@@ -22,7 +22,7 @@ const   UserProfileCard = (props) => {
     props.getLikes(likesLength)
 
     const getUserPost = async()=>{
-        let res = await axios.get(`http://localhost:8080/posts/userPost/${user._id}`)
+        let res = await axios.get(`https://socalapp-backend.onrender.com/posts/userPost/${user._id}`)
         let data = res.data
         console.log(data)
         setallPosts(data.posts)
@@ -35,7 +35,7 @@ const   UserProfileCard = (props) => {
     const handleLike = async(postId)=>{
       console.log("running")
       console.log(postId)
-      let res = await axios.get(`http://localhost:8080/posts/like/${postId}`,{
+      let res = await axios.get(`https://socalapp-backend.onrender.com/posts/like/${postId}`,{
         headers:{
           'Authorization':userStore.token
         }
