@@ -44,76 +44,7 @@ const Sidebar = (props) => {
           setFormDetails({...formDetails,file:filesArr})
     
       }
-      //using FileReader
-      // const handleSubmit = async (e) => {
-      //   e.preventDefault()
-    
-      //   function covertInString(fileObj){
-      //       return new Promise((resolve, reject) => {
-      //           let reader = new FileReader();
-      //           reader.readAsDataURL(fileObj);
-      //           reader.onload = ()=>{
-      //             resolve(reader.result)
-      //           }
-      //           reader.onerror=()=>{
-      //             reject(reader.error)
-      //           }
-      //       })
-      //   }
-    
-      //   let arr = formDetails.file.map((fileObj)=>{     // [promise , promise]
-      //     let x = covertInString(fileObj)
-      //     return x
-      //   })
-    
-      //   let StringArr = await Promise.all(arr).then((ans)=>ans)
-      //   // console.log(StringArr) // [string, string]
-        
-      //   let finalArr = StringArr.map((string)=>{
-      //       let obj = {};
-      //   if(string.split('/')[0].split(':')[1]==='image'){
-      //       obj.resource_type="image",
-      //       obj.url = string
-          
-      //   }
-      //   else{
-      //     obj.resource_type="video",
-      //     obj.url = string
-      //   }
-    
-      //   return obj
-      //   })
-    
-      //   // console.log(finalArr)
-    
-      //   let finalObj = {
-      //     title:formDetails.title,
-      //     description:formDetails.description,
-      //     file:finalArr
-      //   }
-    
-      //   console.log(finalObj)
-    
-      //   let res = await axios.post('http://localhost:8080/posts/create',finalObj,{
-      //     headers:{
-      //       'Authorization':userStore.token
-      //     }
-      //   });
-      //   let data = res.data;
-      //   console.log(data)
-      //   if(data.success===true){
-      //     setFormDetails({
-      //       title:'',
-      //       description:'',
-      //       file:[]
-      //     })
-      //     setIsModalOpen(false);
-      //     props.getAllUserPost()
-
-      //   }
-        
-    
-      // }
+      
 
       // using cloduinary
       const handleSubmit = async (e) => {
