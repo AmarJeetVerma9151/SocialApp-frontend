@@ -76,7 +76,7 @@ const   UserProfileCard = (props) => {
                   </h3>
                 </a>
           
-                <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
+                <p className="mt-2 line-clamp-3 gap-2 text-sm/relaxed text-gray-700">
                  {ele.description}
                 </p>
               </div>
