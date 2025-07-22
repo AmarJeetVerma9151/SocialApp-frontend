@@ -158,7 +158,7 @@ const Home = () => {
       <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{ele.description}</p>
     </div>
    
-    <div className='flex items-center gap-2 my-3 text-white'>
+    <div className='flex items-center gap-2 my-3 text-black'>
          <img  className='w-10 h-10 rounded-full' src={userStore.user.profilePic} alt="" />
          <input value={commentValue} onChange={handleCommentChanger} type="text" className='w-full bg-transparent border-2 border-gray-400 outline-none px-4 py-2 rounded-md'  placeholder='enter a comment...'/>
          <button onClick={()=>handleCommentSubmit(ele._id)}><IoSend size={25} color='green'/></button>
