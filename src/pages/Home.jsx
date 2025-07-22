@@ -129,10 +129,7 @@ const Home = () => {
                       </div>
                       <div className="mt-4">
       <div className="flex items-center">
-        {/* <div className="flex items-center ms-5">
-          <img className="object-cover w-10 h-10 rounded-full" src={ele.userId.profilePic} alt="Avatar" />
-          <a href="#" className="mx-2 font-semibold text-gray-700 dark:text-gray-200" tabIndex={0} role="link">{ele.userId.name}</a>
-        </div> */}
+        
         <span className="mx-1 text-xs text-gray-600 dark:text-gray-300">{formatDistanceToNow(ele.createdAt, { addSuffix: true })}</span>
       </div>
     </div>
@@ -140,8 +137,6 @@ const Home = () => {
   <Swiper
       spaceBetween={50}
       slidesPerView={1}
-      // onSlideChange={() => console.log('slide change')}
-      // onSwiper={(swiper) => console.log(swiper)}
     >
      
       {ele.file.map((data) => {
