@@ -141,16 +141,10 @@ const Profile = (props) => {
       <div>{userDetails.followers.length}</div>
     </li>
     <li className="flex flex-col items-center justify-around">
-      {/* <svg className="w-4 fill-current text-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-        <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
-      </svg> */}
       <FaHeart size={30} color='red'/>
       <div>{likesCount}</div>
     </li>
   </ul>
-  {/* <div className="p-4 border-t mx-8 mt-2">
-    <button className="w-1/2 block mx-auto rounded-full bg-gray-900 hover:shadow-lg font-semibold text-white px-6 py-2">Follow</button>
-  </div> */}
 </div>
 
 <div className='flex gap-5 mt-4 mx-auto w-[90%]'>

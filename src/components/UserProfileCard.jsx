@@ -58,16 +58,7 @@ const   UserProfileCard = (props) => {
                    <span className='flex'> <FaHeart color={ele.likes.includes(userStore.user._id)?'red':''} onClick={()=>handleLike(ele._id)} size={25}/> <sup>{ele.likes.length}</sup></span>
                     <span className='flex mt-6'><GoCommentDiscussion size={25} /> <sub>{ele.comments.length}</sub></span>
                 </div>
-            {/* <div className="rotate-180 p-2 [writing-mode:_vertical-lr]">
-              <time
-                datetime="2022-10-10"
-                className="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
-              >
-                <span>2022</span>
-                <span className="w-px flex-1 bg-gray-900/10"></span>
-                <span>Oct 10</span>
-              </time>
-            </div> */}
+          
           
             <div className="hidden sm:block sm:basis-56">
               <img

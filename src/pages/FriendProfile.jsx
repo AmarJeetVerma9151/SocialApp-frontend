@@ -1,17 +1,10 @@
 
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-// import { useSelector } from 'react-redux'
-// import { FaCameraRetro } from "react-icons/fa";
-// import UserProfileCard from '../components/UserProfileCard';
 import { FaHeart } from "react-icons/fa";
 import { useLocation } from 'react-router-dom';
 
 const FriendProfile = (props) => {
-
-    // let userStore = useSelector((state)=>state.user);
-    // let userDetails = userStore.user
-    // console.log(userDetails)
 
   let location = useLocation();
   let userId = location.state

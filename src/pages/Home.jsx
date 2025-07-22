@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
-// import Style from './Home.module.css'
 import { formatDistanceToNow } from 'date-fns';
 import Sidebar from '../components/Sidebar';
 import axios from 'axios';
